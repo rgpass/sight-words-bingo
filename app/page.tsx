@@ -1,3 +1,4 @@
+import { Row } from "./_components/Row";
 import { words } from "./words";
 
 function randomSample(arr: string[], n: number) {
@@ -31,19 +32,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen w-full h-full">
       <div className="flex flex-col">
         {board.map((row, i) => (
-          <div
-            key={i}
-            className="flex max-h-[calc(min(90vh,_90vw))] max-w-[calc(min(90vh,_90vw))] first-of-type:border-t-2 last-of-type:border-b-2 border-red-500"
-          >
-            {row.map((word, j) => (
-              <div
-                key={`${i}-${j}`}
-                className="flex justify-center items-center text-center w-full h-full aspect-square max-h-[calc(min(18vh,_18vw))] max-w-[calc(min(18vh,_18vw))] first-of-type:border-l-4 last-of-type:border-r-4 border-2 border-red-500"
-              >
-                {word}
-              </div>
-            ))}
-          </div>
+          <Row key={i} row={row} />
         ))}
       </div>
     </main>
