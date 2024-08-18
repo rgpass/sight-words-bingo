@@ -29,7 +29,7 @@ export default function Home() {
   const board = generateBingoBoard(sampleWords);
 
   return (
-    <main className="flex flex-col min-h-screen w-full h-full">
+    <main className="flex flex-col min-h-screen w-full h-full bg-white text-black">
       <div className="flex flex-col">
         {board.map((row, i) => (
           <Row key={i} row={row} />
