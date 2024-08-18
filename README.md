@@ -6,7 +6,11 @@ This is a simple bingo game for sight words. The words are hardcoded for now sin
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Contributing
+## TODOs
+
+- Make the board centered in the screen
+- When printing, put in alphabetical order
+- Maybe: have the printing be on the screen, with a toggle to show/hide
 
 ## Getting Started Locally
 
