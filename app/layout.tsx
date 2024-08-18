@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "A learning game for the Pass family",
 };
 
-export const fetchCache = "force-no-store";
+export const dynamic = "force-dynamic";
 
 export default function RootLayout({
   children,
