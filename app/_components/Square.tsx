@@ -12,7 +12,7 @@ export function Square({ word }: { word: string }) {
 
   return (
     <div
-      className="relative flex justify-center items-center text-center w-full h-full aspect-square max-h-[calc(min(20vh,_20vw))] max-w-[calc(min(20vh,_20vw))] first-of-type:border-l-4 last-of-type:border-r-4 border-2 border-blue-500"
+      className="relative flex justify-center items-center text-center w-full h-full aspect-square max-h-[calc(min(19vh,_19vw))] max-w-[calc(min(19vh,_19vw))] first-of-type:border-l-4 last-of-type:border-r-4 border-2 border-blue-500"
       onClick={handleClick}
     >
       {word}
