@@ -1,6 +1,26 @@
 import { Row } from "./Row";
 import { words } from "../words";
 
+interface Props {
+  isAlphabetical?: boolean;
+}
+
+export function Board({ isAlphabetical }: Props) {
+  const sampleWords = randomSample(words, 24);
+  const wordsToUse = isAlphabetical
+    ? sampleWords.sort().reverse()
+    : sampleWords;
+  let board = generateBingoBoard(wordsToUse);
+
+  return (
+    <div className="flex flex-col">
+      {board.map((row, i) => (
+        <Row key={i} row={row} />
+      ))}
+    </div>
+  );
+}
+
 function randomSample(arr: string[], n: number) {
   return arr.sort(() => 0.5 - Math.random()).slice(0, n);
 }
@@ -22,17 +42,4 @@ function generateBingoBoard(words: string[]): string[][] {
   }
 
   return bingoBoard as string[][];
-}
-
-export function Board() {
-  const sampleWords = randomSample(words, 24);
-  const board = generateBingoBoard(sampleWords);
-
-  return (
-    <div className="flex flex-col">
-      {board.map((row, i) => (
-        <Row key={i} row={row} />
-      ))}
-    </div>
-  );
 }

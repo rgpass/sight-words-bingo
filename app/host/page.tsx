@@ -5,7 +5,7 @@ export default function Host() {
   return (
     <main className="flex flex-col min-h-screen w-full h-full bg-white text-black">
       <NextWord />
-      <Board />
+      <Board isAlphabetical />
     </main>
   );
 }
