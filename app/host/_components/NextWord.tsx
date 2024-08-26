@@ -19,7 +19,7 @@ export function NextWord() {
     setRemainingWords(rest);
   };
 
-  const handleClickPrint = () => console.log(previousWords.join(", "));
+  const handleClickPrint = () => console.log(previousWords.sort().join(", "));
 
   return (
     <div className="flex gap-4 mb-1">

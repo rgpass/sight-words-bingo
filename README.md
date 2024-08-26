@@ -8,7 +8,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## TODOs
 
-- When printing, put in alphabetical order
 - Make the board centered in the screen
 - Maybe: have the printing be on the screen, with a toggle to show/hide
 
