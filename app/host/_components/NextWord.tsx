@@ -22,15 +22,15 @@ export function NextWord() {
   const handleClickPrint = () => console.log(previousWords.sort().join(", "));
 
   return (
-    <div className="flex gap-4 mb-1">
+    <div className="mb-1 flex gap-4">
       <button
-        className="border-2 border-blue-500 rounded-md px-2 py-1"
+        className="rounded-md border-2 border-blue-500 px-2 py-1"
         onClick={handleClickNext}
       >
         Next
       </button>
       <button
-        className="border-2 border-blue-500 rounded-md px-2 py-1"
+        className="rounded-md border-2 border-blue-500 px-2 py-1"
         onClick={handleClickPrint}
       >
         Print

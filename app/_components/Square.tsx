@@ -12,12 +12,12 @@ export function Square({ word }: { word: string }) {
 
   return (
     <div
-      className="relative flex justify-center items-center text-center w-full h-full aspect-square max-h-[calc(min(19vh,_19vw))] max-w-[calc(min(19vh,_19vw))] first-of-type:border-l-4 last-of-type:border-r-4 border-2 border-blue-500"
+      className="relative flex aspect-square h-full max-h-[calc(min(19vh,_19vw))] w-full max-w-[calc(min(19vh,_19vw))] items-center justify-center border-2 border-blue-500 text-center first-of-type:border-l-4 last-of-type:border-r-4"
       onClick={handleClick}
     >
       <span className="text-xl">{word}</span>
       {isSelected && (
-        <div className="absolute w-full h-full border-8 rounded-full border-red-500 bg-red-500 opacity-25" />
+        <div className="absolute h-full w-full rounded-full border-8 border-red-500 bg-red-500 opacity-25" />
       )}
     </div>
   );
